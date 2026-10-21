@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+camunda:
+  client:
+    mode: saas
+    auth:
+      client-id: ${CAMUNDA_CLIENT_ID:dNpilgcFr8bKA8.n7zvEI.RQKmez0B3v}
+      client-secret: ${CAMUNDA_CLIENT_SECRET:h-zEqMdFb0-TUd61u~09FpsIl-1VgLUim6HxwaY3vkwAgBWII6rcrnb.AKzGwx15}
+    cloud:
+      cluster-id: ${CAMUNDA_CLUSTER_ID:167174d1-0f53-4563-9831-21f4ca706ee9}
+      region: ${CAMUNDA_CLUSTER_REGION:sin-1}
+
+logging:
+  level:
+    root: INFO
+    edu.srmist.outpass: INFO
+    io.camunda: INFO
